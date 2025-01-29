@@ -1,8 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from BlogEvent import views
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('home/', views.home),
+    path('admin/', admin.site.urls, name = 'admin'),
+    path('', views.home, name='base'),
+    path('about/', views.about, name='about'),
+    path('gallery/', views.gallery, name='gallery'),
 ]

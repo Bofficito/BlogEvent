@@ -43,7 +43,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'BlogEvent' / 'templates',
+            BASE_DIR / 'BlogEvent/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
